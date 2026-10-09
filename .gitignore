@@ -1,0 +1,15 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local database data and backups
+data/
+backups/
+*.dump
+*.sql.gz
+
+# Local files
+.DS_Store
+Thumbs.db
