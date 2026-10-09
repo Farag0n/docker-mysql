@@ -70,7 +70,7 @@ docker compose down
 
 ### Remove the containers and persistent data
 
-**Warning:** This command also removes the named volumes declared in the Compose file, permanently deleting the MongoDB data stored in those volumes.
+**Warning:** This command also removes the named volumes declared in the Compose file, permanently deleting the MySQL data stored in those volumes.
 
 ```bash
 docker compose down -v
@@ -78,7 +78,7 @@ docker compose down -v
 
 ## Data Persistence
 
-MySQL data is persisted through the named volume defined in `compose.yaml`.
+MySQL data is persisted through the named volume defined in `compose.yml`.
 
 The data remains available when containers are stopped, paused, resumed, or removed using `docker compose down`, as long as the volume is not deleted.
 
