@@ -10,7 +10,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD in .env}
       MYSQL_DATABASE: mysql
-      MYSQL_USER: ${MYSQL_ROOT_USERNAME:?Set MYSQL_ROOT_USERNAME in .env}
+      MYSQL_USER: ${MYSQL_USERNAME:?Set MYSQL_USERNAME in .env}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Set MYSQL_PASSWORD in .env}
 
     volumes:
